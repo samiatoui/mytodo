@@ -29,16 +29,18 @@ function TodoForm(props) {
         <form className="form-todo" onSubmit={handleSubmit}>
             {props.edit ? (
                 <>
-                    <input
-                        type="text"
-                        placeholder="Add a To-do Item"
-                        className="todo-input edit"
-                        name="text"
-                        value={input}
-                        onChange={handleChange}
-                        ref={inputRef}
-                    />
-                    <button className="todo-button edit">Update Item</button>
+                    <div className='editcont'>
+                        <input
+                            type="text"
+                            placeholder="Add a To-do Item"
+                            className="todo-input edit"
+                            name="text"
+                            value={input}
+                            onChange={handleChange}
+                            ref={inputRef}
+                        />
+                        <button className="todo-button edit">Update</button>
+                    </div>
                 </>
             ) : (
                 <>

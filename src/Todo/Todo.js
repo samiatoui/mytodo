@@ -22,8 +22,6 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
         return <TodoForm edit={edit} onSubmit={submitUpdate} />;
     }
 
-
-
     return todos.map((todo, index) => (
             <div className={todo.isComplete ? 'todo-item todo-complete' : 'todo-item'} key={index}>
                 <div key={todo.id} onClick={() => completeTodo(todo.id)}>
