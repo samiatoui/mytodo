@@ -44,18 +44,20 @@ function TodoForm(props) {
                 </>
             ) : (
                 <>
-                    <input
-                        type="text"
-                        placeholder="Add a To-do Item"
-                        className="todo-input"
-                        name="text"
-                        value={input}
-                        onChange={handleChange}
-                        ref={inputRef}
-                    />
-                    <button className="todo-button">
-                        Add Item
-                    </button>
+                    <div className='editcont'>
+                        <input
+                            type="text"
+                            placeholder="Add a To-do Item"
+                            className="todo-input"
+                            name="text"
+                            value={input}
+                            onChange={handleChange}
+                            ref={inputRef}
+                        />
+                        <button className="todo-button">
+                            Add Item
+                        </button>
+                    </div>
                 </>
             )}
 
